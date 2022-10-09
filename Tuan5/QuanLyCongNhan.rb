@@ -60,7 +60,6 @@ class ManagerOfficer
         lenght213 = @ds213.length
         for i in 0..lenght do
             @ds213[i].display
-        
     end
     end
 end
