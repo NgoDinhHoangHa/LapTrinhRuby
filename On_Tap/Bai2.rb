@@ -61,15 +61,15 @@ class QuanLySach
         puts ("<---------******---------->")
     end
     def timkiemtheohang(key)
-        searchList = @@vehicles .select {|o| o.sotrang213.include? key}
+        searchList = @@vehicles .select {|o| o.sotrang213 == key}
         searchList.each{ |sl| sl.show}
     end
     def timkiemTacGia(key)
-        searchList = @@tailieu .select {|o| o.tentg213.include? key}
+        searchList = @@tailieu .select {|o| o.tentg213 == key}
         searchList.each{|sl| sl.show}
     end
     def timkiemSoPhatHanh(key)
-        searchList = @@tailieu .select {|o| o.soph213.include? key}
+        searchList = @@tailieu .select {|o| o.soph213 == key}
         searchList.each{|sl| sl.show}
     end
 end
